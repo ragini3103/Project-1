@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: rgba(135, 207, 235, 0.824);
+            height: 90px;
+            justify-content: space-between;
+            font-size: 25px;
+            font-style: oblique;
+            color: white;
+        }
+        span{
+            position: relative;
+            top: 45px;
+            gap: 20px;
+             right: 35px;
+            
+        }
+        .hd{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-right: 20px;
+            background-color: gainsboro;
+        }
+        .board{
+          border: 5px solid black;
+          border-radius: 15px;
+          background-color: white;
+          flex-direction: row;
+          flex-wrap: wrap;
+          height: 380px;
+          width: 1250px;
+        }
+        .box1{
+            width: 700px;
+            height: 320px;
+            border-radius: 15px;
+            background-color: azure;
+            margin: 40px;
+        }
+         .box2{
+            width: 300px;
+            height: 130px;
+            position: relative;
+            background-color: lightgreen;
+            left: 800px;
+            bottom: 370px;
+            margin-left: 10px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px 4px black;
+        }
+        .box2:hover {
+      transform: scale(1.05);
+    }
+
+    .box2:active {
+      transform: scale(1.1);
+    }
+        .box3{
+            width: 300px;
+            height: 130px;
+            position: relative;
+            background-color: orange;
+            left: 800px;
+            bottom: 370px;
+            margin-left: 10px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px 4px black;
+        }
+        .box3:hover {
+      transform: scale(1.05);
+    }
+
+    .box3:active {
+      transform: scale(1.1);
+    }
+        table{
+            margin-left: 200px;
+        }
+
+        th,td{
+            padding: 20px;
+            width:160px;
+        }
+        tr:hover{
+          background-color: yellow;
+        }
+        th{
+          background-color: green;
+          color: white;
+        }
+         footer{
+            background-color: skyblue;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 style="margin: 10px; margin-top: 35px;">The Personal Finance Dashboard</h1>
+    <nav>
+        <span><a href="project1.html">HOME |</a></span>
+        <span><a href="free.html">FREE TRIAL</a></span>
+    </nav>
+    </header>
+    <div class="hd">
+        <h3 style="text-align: left; margin-left: 10px;">MY FINANCE TRACKER</h3>
+        <p style="font-weight: bold;">🧝🏻‍♀️Admin</p>
+    </div>
+    <div class="board">
+    <div class="box1">
+      <h3 style="margin-left: 10px; color: red;">DASHBOARD OVERVIEW</h3>
+      <img src="C:\Users\Ragini\Documents\MAGIC_BUS BATCH_8\dashboard.png" alt="board" width="700px" height="250px">
+      </div>
+      <div class="box2">
+        <p style="margin: 15px;"><b>Expense</b></p>
+        <p style="margin: 15px; font-weight: bolder; font-size: 25px;">$22,420</p>
+        <p style="margin: 15px;">⬆️40% vs last month</p>
+      </div>
+      <br><br>
+       <div class="box3">
+        <p style="margin: 15px;"><b>Income</b></p>
+        <p style="margin: 15px; font-weight: bolder; font-size: 25px;">$78,000</p>
+        <p style="margin: 15px;">⬇️10% vs last month</p>
+      </div>
+    </div>
+    <h2 style="margin-left: 15px;">Transaction History</h2>
+    <table border="1">
+       <tr>
+        <th>Transaction</th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>Category</th>
+       </tr>
+       <tr>
+        <td>Spotify</td>
+        <td>- $18.99</td>
+        <td>Wed 1:00pm</td>
+        <td>Subscriptions</td>
+       </tr>
+       <tr>
+        <td>A Coffee</td>
+        <td>- $4.50</td>
+        <td>Wed 7:20am</td>
+        <td>Food & Dining</td>
+       </tr>
+       <tr>
+        <td>Stripe</td>
+        <td>+ $88.00</td>
+        <td>Wed 2:45am</td>
+        <td>Income</td>
+       </tr>
+        <tr>
+        <td>Walmart</td>
+        <td>- $56.40</td>
+        <td>Tue 6:30pm</td>
+        <td>Supermarket</td>
+       </tr>
+        <tr>
+        <td>Medical Shop</td>
+        <td>- $24.90</td>
+        <td>Tue 2:15pm</td>
+        <td>Health/Medical</td>
+       </tr>
+    </table>
+    <footer style="text-align: center; margin-top: 5px;">
+        <p>Copyright 2023 Becca Collier. All Rights Reserved. Website Template by K Design Co.</p>
+    </footer>
+</body>
+</html>
